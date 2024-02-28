@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/paul_2-removebg-preview.png" class="logo"></img>
+                <ul>
+                    <li><a href="#Home" class="active-link">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+
+            </nav>
+            <!-- home section design --> 
+            <div class="header-text">
+                <p>SOFTWARE ENGINEER</p>
+                <h1><span>KISITU</span><br>PAUL</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo_2024-01-09_10-27-16.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My passion lies in leveraging database management skills to create efficient and streamlined systems for data organization and retrieval as well as applying DevOps principles into my scope of work.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DevOPS Engineering</span><br>Application of DevOps prfnciples. </li>
+                            <li><span>Web Development</span><br>Web  Development</li>
+                            <li><span>Database management</span><br>Databe systems / Management</li>
+                            <li><span>Office management</span><br>workingg Experience with the Microsoft suit</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Internship at MASAKA district headquaters in the health department</li>
+                            <li><span>2022</span><br>Web Development from CodeCademy </li>
+                            <li><span>2022</span><br>DevOps (development and operations engieering) beginners certificate  from EDUREKA </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-to date</span><br>Bachelor of science in applied information technology - ISBAT UNIVERSITY </li>
+                            <li><span>2021</span><br>Certificate in web development at APTECH School of Computer Education</li>
+                            <li><span>2019-2021</span><br>UACE at St Josephs Scondary School Naggalama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Proficient in HTML, CSS, JavaScript, React, and Angular. Skilled in creating user-friendly, responsive websites and backend solutions using Node.js and MySQL. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file"></i>
+                    <h2>office management tools</h2>
+                    <p>A good understanding of the office management tools regarding the Microsoft suit</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>DevOps principles.</h2>
+                    <p>Skilled in DevOps engineering—expertise in CI/CD, Docker, Kubernetes, and Jenkins. 
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/glamour.png" alt="">
+                    <div class="layer">
+                        <h2>Laundry website Landing page</h2>
+                        <p>Developed a user-friendly website for Glamour Dry Cleaners and Laundry, featuring online booking and smooth payment options for enhanced client convenience..</p>
+                        <a href="https://glamour-365.pages.dev" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ace suits.png" alt="">
+                    <div class="layer">
+                        <h2>Online Suits Sales Web app</h2>
+                        <p>Developed a web app for ace suits which enables people to order or rent suits on the go.</p>
+                            <a href="https://ace-32i.pages.dev/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/inventory.png" alt="">
+                    <div class="layer">
+                        <h2>Localhost Inventory Management Database</h2>
+                        <p>In my most recent position, I had the honor of leading the construction of a comprehensive inventory management database system for the Masaka District Health Office (DHO).</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/evra34" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------CONTACT---------- -->
+    <form id="contact" action="https://formsubmit.co/3734259c4758fdfddf09713996e7b6e7" method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> kisitupaul34@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0752232585</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/bad_box_24?t=DozhR1trLNP20-B-ib-Ibw&s=09" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/evra34" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kisitu-paul-47695326a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CURRICULUM VITAE.docx" download class="btn btn2" target="_blank">Download My CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Dev paulo. </i> by paulo</p>
+        </div>
+    </form>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        // Function to open a tab.
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+</body>
+
+</html>
